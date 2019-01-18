@@ -1,0 +1,271 @@
+/*
+Theme Name: WP-Starter-abocli
+Theme URI: http://themeawesome.com/wordpress-child-theme
+Description: A child theme of WP-Forge
+Author: noesinet
+Author URI: http://noesi.net/
+Template: wp-forge
+Version: 4.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: wp-starter
+
+Start adding your theme specific styles below.
+header-prple: #716c71;
+nav-prple: #2d043d;
+#351330
+bg-prple:#938d93;
+
+color palette
+https://www.colourlovers.com/palette/379413/you_are_beautiful
+purp: #351330;
+jeans:#424254;
+sanguine: #64908A;
+ros:#E8CAA4;
+amaranth: #CC2A41;
+*/
+
+h1,h2,h3,h4,h5, .site-title{
+	font-family 	: "raleway", sans-serif;
+}
+body{background 	: #4f8699;}
+.content_wrap, #secondary-sidebar{
+	background 		: #fff;
+	padding         : 2rem;
+}
+a{color             : #47003a;}
+a:hover{color       : #2d043d;}
+.entry-content-page a:hover{text-decoration: underline;}
+/*  buttons    */
+.entry-content-page a.button,
+.button, 
+button {
+    background-color: #CC2A41;
+    color           : #fff;
+    font-weight     : 600;
+}
+.entry-content-page a.button:hover,
+.button:hover,
+button:hover{
+    background-color: #47003a;
+    color           : #fff;
+}
+#secondary-sidebar.widget-area .textwidget ul,
+.entry-content-post ul,
+.entry-content-post ol,
+.entry-content-page ul,
+.entry-content-page ol {
+    margin: 0 0 1.5rem;
+    list-style-image: url("/wp-content/themes/wp-starter-abcl/images/next.png");
+    list-style-position: inherit;
+}
+/* 
+header
+---------------------------------*/
+.page header#header{background      : none;}
+
+/* 
+main nav
+---------------------------------*/
+.contain-to-grid .top-bar, 
+.top-bar, .top-bar ul, 
+.top-bar ul li, 
+.contain-to-grid, 
+.top-bar.title-bar, 
+.title-bar {
+    background-color: #424254;
+    font-size 		: 1.1rem;
+    padding 		: 0.2em 0;
+}
+.title-bar{
+	padding: 0.76rem 0.75rem;
+}
+.fixed .top-bar{
+	    max-width: 75rem;
+    margin: 0 auto;
+}
+.top-bar .menu-item a,
+.dropdown.menu .is-active>a {
+    color 			: #fff;
+}
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a::after{
+	border-color 	: #fff transparent transparent;
+}
+.top-bar-right .menu > li.name:hover,
+.top-bar .menu > li:not(.menu-text) > a:hover,
+.top-bar .menu > .active:hover,
+.top-bar .menu .current_page_item,
+.top-bar .menu .current-page-ancestor,
+.top-bar .menu .current-menu-ancestor,
+.top-bar .menu .current-menu-parent,
+.top-bar .menu .current-page-parent,
+.top-bar .menu .current_page_parent,
+.top-bar .menu .current_page_ancestor  {
+    background-color: #351330;
+    color 			: #fff;
+    text-decoration: none;
+}
+.is-dropdown-submenu{
+	border 			: none;
+}
+.submenu-toggle:after{
+    border-color: #fff transparent transparent;
+}
+button.submenu-toggle{
+    background-color: transparent;
+}
+
+/*  pregnancy calc  */
+.widget_pregnancy_widget button{padding: 0.8em 1em;}
+.widget_pregnancy_widget .date{
+	float 			: left;
+	margin-right 	: 1em;
+}
+.widget_pregnancy_widget .pregnancy-result{clear: left;}
+/* 
+page styling     
+--------------------------------*/
+.home header.entry-header{text-align: center;}
+.home section.content_wrap{background: none; padding: 2rem 0;}
+.home .entry-title,
+.home .entry-title-page{color: #fff;}
+.home img.clinic-map{margin: 0; width: 100%;}
+.home .front-page-content-left{
+    background: white;
+    padding: 4rem 4rem;
+    height: 100%;
+}
+.home .front-page-content-right{
+    background: #bfe3e7;
+    height: 100%;
+}
+.home .entry-content-page .widgets_on_page ul{
+    margin-left: 0;
+}
+
+.site-title, p.site-title {
+	font-size 		: 1.3rem;
+    float 			: left;
+}
+p.site-description{
+	color 			: white;
+    font-size 		: 1rem;
+    line-height 	: 1.9rem;
+    margin-left 	: 18rem;
+}
+.page header#header .site-title a{
+	color 			: #fefefe;
+}
+#secondary-sidebar .sidebar_wrap{
+	background 		: #401b4e;
+	color 			: #fff;
+	border 			: none;
+}
+#secondary-sidebar{
+	background 		: #424254;
+	color           : #fff;
+	border          : none;
+}
+#secondary-sidebar a{
+    color           : #E8CAA4;
+}
+
+    
+#language-selector{
+	float 			: right;
+    margin-top 		: -1.5em;
+}
+#language-selector .qtranxs_language_chooser { 
+	list-style-type :none;
+}
+#language-selector .qtranxs_language_chooser li { float:left; margin-left:4px; }
+#language-selector.lang_sel li span{
+	position 		: relative;
+    top 			: 1em;
+    font-size 		: .7em;
+    left 			: -30%;
+    color 			: #fefefe;
+}
+#language-selector li.active img{
+    border: 1px solid white;
+}
+footer[role="contentinfo"]{
+	border 			: none;
+	color 			: #fff;
+    padding         : 1rem 2rem;
+
+}
+/* Child Theme Media Queries - Use the following media queries to adjust the appearance of your theme on mobile devices */
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    /* add css for small screens only here */
+    .page header#header .site-title{
+    	font-size 	: 1.5em;
+    }
+    .off-canvas, 
+    .off-canvas .is-drilldown-submenu,
+    .off-canvas-absolute,
+    .off-canvas-absolute .is-drilldown-submenu,
+    .off-canvas-content .title-bar{
+    	background 	: #2d043d;
+
+    }
+    .home .front-page-content-left{
+            padding: 3rem 2.4rem;
+    }
+   #language-selector.lang_sel li span{
+        color       : #716c71;
+        font-size   : 0.1em;
+    }
+    .widget_pregnancy_widget .date{margin-right: .5rem;}
+    .site-title, p.site-title{
+        float       : none;
+    }
+    p.site-description {
+        margin-left : 0; 
+    }
+    .callout.large {
+        padding-top : 2rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    .entry-content-post ul, .entry-content-post ol, .entry-content-page ul, .entry-content-page ol{
+        margin-left : 0;
+    }
+    .content_wrap, #secondary-sidebar {padding: 2rem 1rem;}
+    /* iframe styling */
+    article iframe .container-fluid{
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer[role="contentinfo"] {
+        padding: 1rem 1rem;
+    }
+    footer > .site-info{clear: both;}
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    /* add css for medium to large screens here */
+    .content_wrap, #secondary-sidebar{
+    	padding 		: 2rem;
+    }
+    .home img.clinic-map{
+        width: 100%;
+    }
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    /* add css for medium screens only here */
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+    /* add css for large to xtra large screens only here */
+}
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    /* add css for large screens only here */
+}   

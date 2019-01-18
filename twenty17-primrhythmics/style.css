@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Twenty17-primitiverhythmics
+ Theme URI:    http://example.com/
+ Description:  Twenty17 Child Theme for primitive rhzthmics
+ Author:       sortofme
+ Author URI:   http://noesi.net
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child-primitiverhythmics
+*/
+h1.site-title, .site-title a{
+	text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Poppins", "Helvetica Neue", helvetica, arial, sans-serif;
+	text-transform: none;
+	font-weight: 400;
+}
