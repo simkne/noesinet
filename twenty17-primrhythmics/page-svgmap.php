@@ -52,12 +52,12 @@ get_header();
 	}
 
 	#drag_panel_close {
-	    padding: 0 .5rem;
-	    cursor: pointer;
-	    z-index: 4;
-	    text-align: right;
-	    height: 1rem;
-	    color: #a20c0c;
+		padding: 0 .5rem;
+		cursor: pointer;
+		z-index: 4;
+		text-align: right;
+		height: 1rem;
+		color: #a20c0c;
 	}
 	#drag_panel .start_info{
 		color: #464646;
