@@ -1,0 +1,247 @@
+/*plugin styles*/
+	.mapContainer{
+		position 	: relative;
+		width 		: 100%;
+	}
+	#euroMap svg#svg_map_europe{
+		width 		: 100%;
+		height 		: 100%;
+		background 	: #bfe3e7;
+	}
+	#euroMap svg path{
+		stroke 		: #747474;
+		stroke-width: 1px;
+		position 	: relative;
+		transition 	: 130ms;
+	}
+	.country_name{
+		font-size 	: 1.3rem;
+		font-weight : 600;
+		float 		: left;
+	}
+	#drag_panel{
+		cursor 		: move;
+		position 	: absolute;
+	    z-index 	: 3;
+	    right 		: 30%;
+	    top 		: 25%;
+		border 		: 1px solid #dcdcdc;
+	    background 	: #ffffffd3;
+	    width 		: 42%;
+	    border-radius: 0.2rem;
+	    -webkit-box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.2);
+		-moz-box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.2);
+		box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.2);
+	}
+
+	#drag_panel_close {
+	    padding: 0 .5rem;
+	    cursor: pointer;
+	    z-index: 4;
+	    text-align: right;
+	    height: 1rem;
+	    color: #a20c0c;
+	}
+	#drag_panel .start_info{
+		color: #464646;
+		padding: 1rem 1rem 0;
+		text-align: center;
+	}
+	.data_output_panel{
+		display: none;
+		padding: 0.5rem 1.5rem;
+		color 		: #434343;
+	}
+	.data_output_panel .acf_meta{
+		position 	: relative;
+	    display 	: flex;
+	    align-items : center;
+	    margin 		: 0.4rem 0;
+	}
+	.data_output_panel label{
+		max-width 	: 10rem;
+	}
+	.data_output_panel label,
+	.map_key label{
+		color 		: #444;
+		font-weight : 600;
+    	margin-bottom: 0.5em;
+    	line-height: 1.4rem;
+	}
+	.data_output_panel .acf_value.big{
+    	font-size 	: 2rem;
+    	font-weight : 400;
+    	color 		: #5C821D;
+    	position 	: absolute;
+    	right 		: 0;
+    }
+     .data_output_panel #sonderfaelle{
+     	display: block;
+     }
+    .data_output_panel #sonderfaelle .acf_value{
+    	max-height 	: 7rem;
+    	overflow-y 	: auto;
+    	display 	: flex;
+    	margin-bottom: 1rem;
+    	font-size 	: .95rem;
+    	line-height : 1.3rem;
+    }
+    .data_output_panel .legal_status{
+    	display 	: flex;
+    	font-size 	: 0.9rem;
+		margin 		: 0 0 1rem 0;
+    }
+    .data_output_panel .data_date {
+    	margin-top: -0.8rem;
+    	height: 1rem;
+
+    }
+
+    .data_output_panel .data_date label,
+    .data_output_panel .data_date .acf_value{
+    	font-size: .7rem;
+    	font-weight: 400;
+    	color: #343434;
+    	margin-right: .4rem;
+    }
+
+    .data_output_panel .data_date .acf_value{
+    	position: unset;
+    	margin-top: -.4rem;
+    }
+    span.map_icon,
+    span.map_icon_overlay{
+    	width 		: 1.2rem;
+    	margin-left : 0.2rem;
+    	float 		: left;
+	    pointer-events:none; 
+    	fill 		: #343434;
+    }
+    svg.map_icon{
+    	position 	: relative;
+    	top 		: .3rem;
+    }
+    ul.map_key{
+    	list-style: none;
+    }
+    .flex-container{
+    	display 	: flex;
+    }
+    li.flex-item{
+    	justify-content: flex-start;
+    	margin: 0 2rem 0 0;
+    }
+
+    .map_key label{
+    	float 		: left;
+    }
+	.svg_more_link{}
+/*
+	.country_tooltip{
+    	background-color: #555555d3;
+    	color 		: #fff;
+    	text-align 	: center;
+	    border-radius: 6px;
+	    padding 	: .2rem .4rem;
+	    position 	: absolute;
+	    z-index 	: 4;
+	    pointer-events:none; 
+	}*/
+	.data_output_panel #legalitaet.acf_meta{
+		    text-align: right;
+    width: 100%;
+    display: block;
+	}
+	.data_output_panel #legalitaet.acf_meta span.map_icon{
+		    float: right;
+    width: 1.5rem;
+    margin-top: -0.3rem;
+	}
+	.data_output_panel #abtreibung_legalitaet,
+	.data_output_panel #verhutung_legalitaet{
+		display: none;
+	}
+	.map_caption a{
+		border-bottom: 2px solid #999;
+		transition: 130ms;
+	}
+	.map_caption a:hover{
+		border-bottom: 2px solid #333;
+	}
+
+
+/* scrollbar styling */
+::-webkit-scrollbar {width: .2rem;}
+::-webkit-scrollbar-track {background: #f1f1f1;}
+::-webkit-scrollbar-thumb {background: #dcdcdc;}
+::-webkit-scrollbar-thumb:hover {background: #777;}
+	/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 20em) and (max-width: 48.875em) {
+	.country_tooltip{
+		border-radius: 3px;
+	    padding 	: .1rem .2rem;
+	    font-size: .7rem;
+	}
+	#drag_panel{
+		width: 100%;
+		top: 100%;
+		right: 0;
+		background: #fff;
+	}
+	#drag_panel #drag_panel_close{
+		display: none;
+	}
+	.data_output_panel{
+		padding: .7rem;
+	}
+	ul.map_key li.flex-item {
+    	margin: 0 0.7rem 0 0;
+	}
+	ul.map_key label{
+		font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1rem;
+
+	}
+
+}
+@media screen and (min-width: 30em) {
+		
+}
+@media screen and (min-width: 48em) {
+		
+}
+@media screen and (min-width: 67em ) {
+
+}
+@media screen and ( min-width: 79em ) {
+
+}
+@media screen and ( max-width: 48.875em ) and ( min-width: 48em ) {
+
+}
+
+	#stripe line {
+        fill: #5C821D;
+        stroke: white;
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+        stroke-width: .2rem;
+      }
+      g#test {
+        mask: url(#mask);
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+      }
+      g#test circle {
+        fill: black;
+      }
+      span.map_icon_overlay{
+    	position 	: absolute;
+    	fill 		: #343434;
+    	width 		: 0.8rem;
+    	margin-top: -.5rem
+    }
